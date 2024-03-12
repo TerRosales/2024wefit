@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import Leaderboards from "./pages/Leaderboards";
 import Profile from "./pages/Profile";
@@ -9,6 +10,8 @@ import SignIn from "./pages/SignIn";
 const App = () => {
   return (
     <BrowserRouter>
+      {/* Header */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
