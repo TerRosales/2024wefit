@@ -21,8 +21,6 @@ const userSchema = new mongoose.Schema(
       middleName: String,
       lastName: String,
     },
-    createdAt: { type: Date, default: Date.now },
-    updatedAt: { Type: Date, default: Date.now },
     post: {},
     likes: {},
     comments: {},
